@@ -1,0 +1,49 @@
+.flex{
+    display: flex;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flex-center,
+.flex-start,
+.flex-end,
+.flex-v-center,
+.flex-v-start,
+.flex-v-end{
+    @extend .flex;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-v-start{
+    align-items: flex-start;
+}
+
+.flex-v-center{
+    align-items: center;
+}
+
+.flex-v-end{
+    align-items: flex-end;
+}

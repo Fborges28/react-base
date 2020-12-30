@@ -1,0 +1,53 @@
+.InauguracaoPage,
+.HomePage{
+    background-color: rgba($bg-color, $bg-opacity);
+
+    &::before{
+        content: "";
+        position: fixed;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-color: rgba($bg-color, $bg-opacity);
+    }
+    
+    // BACKGROUND COLOR FOR MOBILE SCROLL
+    .MainHeader{
+        background-color: rgba($bg-color, $bg-opacity);
+    }
+}
+
+.GalleryPage,
+.Timeline{
+    background-color: rgba($bg-color-1, $bg-opacity);
+
+    &::before{
+        content: "";
+        position: fixed;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        background-color: rgba($bg-color-1, $bg-opacity);
+    }
+    
+    // BACKGROUND COLOR FOR MOBILE SCROLL
+    .MainHeader{
+        background-color: rgba($bg-color-1, $bg-opacity);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .InauguracaoPage,
+    .HomePage{        
+        // BACKGROUND COLOR FOR MOBILE SCROLL
+        .MainHeader{
+            background-color: transparent;
+        }
+    }
+
+    .GalleryPage,
+    .Timeline{        
+        // BACKGROUND COLOR FOR MOBILE SCROLL
+        .MainHeader{
+            background-color: transparent;
+        }
+    }
+}
